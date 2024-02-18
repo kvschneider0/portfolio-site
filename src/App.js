@@ -1,4 +1,3 @@
-import { Route, Switch } from 'react-router-dom';
 import { createGlobalStyle } from 'styled-components';
 
 import NavBar from './components/NavBar.js';
@@ -12,25 +11,10 @@ function App() {
     <>
       <GlobalStyle />
       <NavBar />
-      <Switch>
-
-        <Route exact path='/'>
           <Home />
-        </Route>
-
-        <Route path='/chess'>
           <Chess />
-        </Route>
-
-        <Route path='/games'>
           <Games />
-        </Route>
-
-        <Route path='/math'>
-          <Math />
-        </Route>                
-
-      </Switch>
+          <Math />       
     </>
   );
 }
